@@ -1,0 +1,40 @@
+.escritorio { grid-area: escritorioGrid;}
+.barraHerramientas { grid-area: barraGrid;}
+.notifs {grid-area: notifsGrid;}
+.app1 {grid-area: uno;}
+.app2 {grid-area: dos;}
+.app3 {grid-area: tres;}
+.app4 {grid-area: cuatro;}
+.app5 {grid-area: cinco;}
+.app6 {grid-area: seis;}
+.app7 {grid-area: siete;}
+.app8 {grid-area: ocho;}
+.busqueda {grid-area: buscar;}
+.tiempo {grid-area: hora;}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'notifsGrid notifsGrid notifsGrid notifsGrid'
+    'escritorioGrid escritorioGrid escritorioGrid escritorioGrid'
+    'escritorioGrid escritorioGrid escritorioGrid escritorioGrid'
+    'escritorioGrid escritorioGrid escritorioGrid escritorioGrid'
+    'escritorioGrid escritorioGrid escritorioGrid escritorioGrid'
+    'barraGrid barraGrid barraGrid barraGrid'
+    ;
+}
+
+.apps {
+    display: grid;
+    grid-template-areas:
+    'hora hora hora hora'
+    'buscar buscar buscar buscar'
+    'uno dos tres cuatro'
+    'cinco seis siete ocho'
+    ;
+    background-color: cadetblue;
+    gap: 3vw;
+}
+.apps > div {
+    background-color: aquamarine;
+    padding: 40px;
+}
